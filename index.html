@@ -8,8 +8,9 @@
     <style>
         body {
             font-family: 'Poppins, sans-serif';
+            font-size: 16px; /* Base font size for accessibility */
             background-color: #121212;
-            color: #e0e0e0;
+            color: #b0b0b0;
             margin: 0;
             padding: 0;
             transition: background-color 0.5s, color 0.5s;
@@ -19,7 +20,8 @@
             padding: 20px;
             text-align: left;
             background-color: #3700b3;
-            color: white;
+            color: #dcdcdc;
+            font-size: 1.25em; /* Slightly larger font for header */
         }
 
         .content {
@@ -30,6 +32,7 @@
         a {
             color: #8ab4f8; /* Bright blue for links */
             text-decoration: none;
+            font-size: 1em; /* Match base font size */
         }
 
         a:hover {
@@ -42,7 +45,7 @@
 
         /* Special links (white) */
         .special-link {
-            color: white; /* White color for special links */
+            color: #b0b0b0; /* White color for special links */
         }
 
         .special-link:hover {
@@ -50,18 +53,9 @@
         }
 
         .special-link:visited {
-            color: white; /* Keep white color after visiting */
+            color: #b0b0b0; /* Keep white color after visiting */
         }
 
-        .toggle-button {
-            padding: 10px 20px;
-            margin: 20px;
-            cursor: pointer;
-            background-color: #6200ea;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
     </style>
     <!-- Import Google Font "Poppins" -->
     <link href="static/css/all.css" rel="stylesheet">
@@ -117,13 +111,6 @@
             Hydra Code Club
         </p>
     </div>
-
-    <script>
-        function toggleDarkMode() {
-            // Toggle dark mode class on the body
-            document.body.classList.toggle('dark-mode');
-            document.getElementById('header').classList.toggle('dark-mode');
-        }
-    </script>
+    
 </body>
 </html>
