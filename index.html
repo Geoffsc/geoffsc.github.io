@@ -22,6 +22,34 @@
             background-color: #3700b3;
             color: #dcdcdc;
             font-size: 1.25em; /* Slightly larger font for header */
+            overflow: hidden;
+            /* animation: slideIn 1s ease-out, text3d 1s ease 1s forwards; */
+            animation: slideIn 1s ease-out, ease 1s forwards;
+        }
+
+        /* Slide-in from left to right */
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* 3D shadow effect */
+        @keyframes text3d {
+            0% {
+                text-shadow: none;
+            }
+            100% {
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2),
+                             4px 4px 4px rgba(0, 0, 0, 0.15),
+                             6px 6px 6px rgba(0, 0, 0, 0.1),
+                             8px 8px 8px rgba(0, 0, 0, 0.05);
+            }
         }
 
         .content {
@@ -99,7 +127,7 @@
             Also experienced with: C++, Java, Ruby, Golang, Rust<br />
             Operating Systems: Windows + Debian Linux<br />
             Containerization/Virtualization: Docker, Azure DevOps Pipelines, VirtualBox<br />
-            Observability/Monitoring: Nagios + some exposure to Datadog<br />
+            Observability/Monitoring: Nagios, Dynatrace + some exposure to Datadog<br />
             Apache: HTTP Server, Solr, Camel<br />
             Microsoft: .NET, (DevOps, Logic Apps, Functions), Power Platform<br />
             Big Data/analytics: Snowflake, Pandas, Power BI, Databricks<br />
@@ -111,6 +139,5 @@
             Hydra Code Club
         </p>
     </div>
-    
 </body>
 </html>
